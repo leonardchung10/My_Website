@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Contacts Page</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Logo</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <form class="contacts">
+            <label for="fname">First Name (*)</label>
+            <input type="text" id="fname" name="firstname" placeholder="e.g. John">
+            <label for="lname">Last Name (*)</label>
+            <input type="text" id="lname" name="lastname" placeholder="e.g. Cena">
+            <label for="relation">Your Relation to Me (*)</label>
+            <select id="relation" name="relation">
+                <option value="select">Please select...</option>
+                <option value="acquaintance">Acquaintance</option>
+                <option value="teacher">Teacher</option>
+                <option value="recruiter">Recruiter</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="other">Please specfiy (*)</label>
+            <input type="text" id="other" name="other" placeholder="e.g. Neighbour">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Type your message here" style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
