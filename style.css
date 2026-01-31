@@ -1,0 +1,28 @@
+.red {
+    color: rgb(197, 27, 27);
+}
+
+.container {
+    display: flex;
+    margin-left: 10%;
+    padding-left: 1%;
+}
+.myLine {
+    width: 200px;
+}
+
+.social-button {
+    width: 100px;
+    height: 100px;
+}
+.box {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(187, 198, 198);
+}
+
+.linkedin {
+    color: rgb(87, 87, 208);
+}
