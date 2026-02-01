@@ -1,7 +1,15 @@
 
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
 body {
-    background: url(img/hong-kong2.jpg) no-repeat center;
+    background: url(img/hong-kong.jpg) no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100%;
     margin: 0px;
     display: flex;
@@ -9,10 +17,12 @@ body {
 
 }
 
+
 nav {
+    box-shadow: 3px 3px 5px rgba(83, 103, 124, 0.4);
     backdrop-filter: blur(20px);
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
 }
+
 
 nav ul {
     display: flex;
@@ -25,10 +35,19 @@ nav ul {
 
 nav li:first-child {
     margin-right: auto;
+
 }
+
+nav li img {
+    height: 100px;
+    width: auto;
+    display: block;
+    margin-left:20px;
+}
+
 nav li {
     display: flex;
-    height: 50px;
+    height: 100px;
     align-items: end;
 }
 
@@ -37,6 +56,7 @@ nav a {
     align-items: center;
     height: 100%;
     color: rgb(0, 0, 0);
+    font-size: larger;
     padding: 0px 20px;
     text-decoration: none;
     transition:300ms;
@@ -47,8 +67,9 @@ nav a:hover {
     color: black;
 
     padding: 0px 50px;
-
+    
 }
+
 
 
 
@@ -56,24 +77,27 @@ nav a:hover {
     color: rgb(197, 27, 27);
 }
 
-.container {
+.intro-box {
     display: flex;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-top: 1%;
     padding-left: 1%;
-}
-.myLine {
-    width: 200px;
+
 }
 
 .social-button {
     width: 100px;
     height: 100px;
+
 }
+
+
 
 .boxes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     align-items:end;
     flex: 1;
@@ -86,6 +110,7 @@ nav a:hover {
     border-radius: 10px;
     background-color: rgb(187, 198, 198);
     opacity: 75%;
+    margin: 20px;
 }
 
 .box:hover {
@@ -98,8 +123,13 @@ nav a:hover {
 
 
 /* contact page*/
-.contacts {
+form.contacts {
     display: flex;
     flex-direction: column;
+}
 
+div.contacts {
+    margin: 2% 10%;
+    background-color: antiquewhite;
+    
 }
