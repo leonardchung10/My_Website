@@ -79,19 +79,20 @@ nav a:hover {
 
 .intro-box {
     display: flex;
+    flex-direction: row;
     margin-left: 5%;
     margin-top: 1%;
     padding-left: 1%;
-
 }
 
-.social-button {
+button.social-button {
     width: 100px;
     height: 100px;
-
 }
 
-
+div.social-button {
+    justify-content: flex-end;
+}
 
 .boxes {
     display: flex;
@@ -129,7 +130,9 @@ form.contacts {
 }
 
 div.contacts {
-    margin: 2% 10%;
-    background-color: antiquewhite;
-    
+
+    margin: 10% 10%;
+    width: 40%;
+    backdrop-filter: blur(5px);
+    color: aliceblue;
 }
