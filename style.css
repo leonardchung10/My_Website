@@ -70,11 +70,12 @@ nav a:hover {
     
 }
 
-
-
-
-.red {
-    color: rgb(197, 27, 27);
+#profile:hover {
+    width: 200px;
+    height:200px;
+    justify-content: center;
+    transition: 200ms;
+    margin: 100px;
 }
 
 .intro-box {
@@ -85,13 +86,19 @@ nav a:hover {
     padding-left: 1%;
 }
 
-button.social-button {
-    width: 100px;
-    height: 100px;
-}
-
 div.social-button {
     justify-content: flex-end;
+}
+
+#linkedin {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    transition: 500ms;
+}
+
+#linkedin:hover {
+    padding: 0px;
 }
 
 .boxes {
@@ -117,9 +124,6 @@ div.social-button {
 .box:hover {
     opacity: 95%;
     transition: 200ms;
-}
-.linkedin {
-    color: rgb(87, 87, 208);
 }
 
 
