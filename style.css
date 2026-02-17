@@ -1,13 +1,14 @@
 
+
 * {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+
 }
 
 body {
   margin: 0;
-  height: 100%;
   inset: 0;
   background: url("img/hong-kong5.jpg") center no-repeat;
   backdrop-filter: blur(12px);
@@ -30,23 +31,23 @@ body {
 
 }
 
-.box {
-    margin-top: 18%;
+.headingBox {
+    margin-top: 15%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 .mySubtitle {
     color: aliceblue;
     font-size: 28px;
     letter-spacing: 20px;
     text-align: center;
-    text-transform: uppercase;
-    margin-top: 5%;    
+    text-transform: uppercase;  
 
 }
+
 .myHeading {
     flex-direction: column;
     font-size: 100px;
@@ -54,8 +55,9 @@ body {
     letter-spacing: 1px;
     color: aliceblue;
     text-align: center;
-
 }
+
+
 
 div.nav {
     display: flex;
@@ -68,6 +70,8 @@ nav {
     opacity: 50%;
     border-radius: 15px;
     transition: 200ms;
+    height: 80px;
+    margin-bottom: 20px;
 }
 
 nav:hover {
@@ -86,14 +90,14 @@ nav ul {
 
 
 nav li img {
-    height: 100px;
+    height: 80px;
     width: auto;
     border-radius: 15px;
 }
 
 nav li {
     display: flex;
-    height: 100px;
+    height: 80px;
     align-items: end;
 }
 
@@ -131,7 +135,7 @@ div.social-button {
     padding: 0px;
 }
 
-/*
+
 .boxes {
     display: flex;
     flex-direction: row;
@@ -140,17 +144,23 @@ div.social-button {
     margin-bottom: 20px;
     align-items:end;
     flex: 1;
+}
 
-}*/
-
+.box {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(187, 198, 198);
+    opacity: 75%;
+}
 
 
 /* contact page*/
 body.contacts {
-    background: url(img/hong-kong.jpg) no-repeat center;
+    background: url(img/hong-kong.jpg) repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -169,10 +179,8 @@ form.contacts {
 
 div.contacts {
     box-sizing: border-box;
-    min-width: 500px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 30px;
+    width: 50%;
+    margin: 30px auto;
     padding: 20px;
     border-radius: 15px;
     background-color: rgba(245, 216, 203);
@@ -220,4 +228,58 @@ textarea.contacts {
     color: rgb(176, 226, 255);
     transition: 200ms;
     transform: translateY(-10px);
+}
+
+
+
+.alert {
+    height: fit-content;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 5px rgba(83, 103, 124, 0.4);
+
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.alert-info {
+    background-color: rgb(176, 226, 255);
+}
+
+.alert-failure {
+    background-color: rgb(255, 176, 176);
+}
+
+.alert-success {
+    background-color: rgb(176, 255, 181);
+}
+
+
+/* About me page */
+
+body.about {
+  margin: 0;
+  inset: 0;
+  background: url("img/hong-kong2.jpg") center repeat;
+}
+
+.mySubtext {
+    color: aliceblue;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.aboutMe {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }

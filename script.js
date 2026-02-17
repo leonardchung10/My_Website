@@ -7,3 +7,4 @@ function toggleOther() {
         otherGroup.style.display = "none";
     }
 }
+
