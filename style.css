@@ -54,6 +54,8 @@ body {
     letter-spacing: 1px;
     color: aliceblue;
     text-align: center;
+    display: flex;
+    overflow-wrap: break-word;
 }
 
 ul {
@@ -166,6 +168,7 @@ form.contacts {
 div.contacts {
     box-sizing: border-box;
     width: 50%;
+    min-width: 400px;
     margin: 30px auto;
     padding: 20px;
     border-radius: 15px;
