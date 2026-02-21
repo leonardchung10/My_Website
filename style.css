@@ -56,7 +56,9 @@ body {
     text-align: center;
 }
 
-
+ul {
+    list-style: none;
+}
 
 div.nav {
     display: flex;
@@ -328,11 +330,13 @@ img.artwork {
     margin: auto;
     border: 20px solid aliceblue;
     border-radius: 20px;
+    transition: transform 0.5s;
+  transform: translateZ(0);
 
 
 }
 
-img.artwork:hover {
+/* img.artwork:hover {
     position: fixed;
     transform: translate(0,-10%);
     object-fit: contain;
@@ -340,6 +344,11 @@ img.artwork:hover {
     max-width: 80vw; max-height: 80vh;
     height: auto; width: auto;
     transition: 300ms;
+} */
+
+img.artwork:hover {
+  z-index: 1;
+  transform: translateZ(0) scale(1.1);
 }
 
 
@@ -350,4 +359,33 @@ img.artwork:hover {
 
 img.icons {
   animation: colorChange 5s infinite linear;
+}
+
+div.description {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;  
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 28px;
+    padding-top: 16px;
+}
+
+li.description {
+    margin-bottom: 20px;
+}
+
+
+/* Projects page */
+body.projects {
+    background: url(img/background_4.jpg) repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
