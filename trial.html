@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Hero</title>
+  <link rel="stylesheet" href="trial.css">
+</head>
+<body>
 
-        <link rel="stylesheet" href="trial.css">
+  <section class="hero">
+    <div class="hero-bg"></div>
 
-        <title>Document</title>
-    </head>
+    <div class="hero-content reveal">
+      <h1>Leonard Chung</h1>
+      <p>Front-End Developer & Creative Builder</p>
+      <a href="#projects" class="hero-btn">View Work</a>
+    </div>
 
-    <body>
-        <section class="reveal">
-            <h2>Project Title</h2>
-        </section>
-    </body>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
 
-    <script src="script.js" type="text/javascript">
+<section id="projects" class="projects">
+  <div class="projects-header reveal">
+    <h2>Selected Projects</h2>
+    <p>A curated selection of digital builds and experiments.</p>
+  </div>
 
-    </script>
+  <div class="projects-grid">
+    
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a" alt="">
+      </div>
+      <div class="project-info">
+        <h3>Aether Studio</h3>
+        <p>Minimal agency website with scroll-based storytelling and custom motion.</p>
+        <span>HTML • CSS • JS • GSAP</span>
+      </div>
+    </div>
 
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="">
+      </div>
+      <div class="project-info">
+        <h3>Nova Dashboard</h3>
+        <p>Interactive analytics dashboard with dynamic data visualisation.</p>
+        <span>React • Chart.js • REST API</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" alt="">
+      </div>
+      <div class="project-info">
+        <h3>Drift Commerce</h3>
+        <p>Modern e-commerce concept focused on immersive product presentation.</p>
+        <span>Next.js • Stripe • Framer Motion</span>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a" alt="">
+      </div>
+      <div class="project-info">
+        <h3>Aether Studio</h3>
+        <p>Minimal agency website with scroll-based storytelling and custom motion.</p>
+        <span>HTML • CSS • JS • GSAP</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="">
+      </div>
+      <div class="project-info">
+        <h3>Nova Dashboard</h3>
+        <p>Interactive analytics dashboard with dynamic data visualisation.</p>
+        <span>React • Chart.js • REST API</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" alt="">
+      </div>
+      <div class="project-info">
+        <h3>Drift Commerce</h3>
+        <p>Modern e-commerce concept focused on immersive product presentation.</p>
+        <span>Next.js • Stripe • Framer Motion</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
 </html>
